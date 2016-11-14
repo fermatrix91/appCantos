@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fernando.cantosapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/montess"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="Fernando Josué Montes">
+
+            <!-- android:label="@string/app_name" -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HimnariosActivity"
+            android:label="@string/title_activity_himnarios"
+            android:parentActivityName=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.HIMNARIOSACT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.fernando.cantosapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".IndiceHimnariosActivity"
+            android:label="@string/title_activity_indice_himnarios"
+            android:parentActivityName=".HimnariosActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.INDICEHIMNARIOSACT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.fernando.cantosapp.HimnariosActivity" />
+        </activity>
+        <activity
+            android:name=".DetalleCantoActivity"
+            android:label="@string/title_activity_detalle_canto"
+            android:parentActivityName=".HimnariosActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.DETALLEACT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.fernando.cantosapp.HimnariosActivity" />
+        </activity>
+        <activity android:name=".IndiceHimnarios" />
+        <activity android:name=".DetalleCanto"></activity>
+    </application>
+
+</manifest>

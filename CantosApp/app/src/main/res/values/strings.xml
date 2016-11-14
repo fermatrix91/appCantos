@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HimnariosMontes</string>
+    <string name="encabezado">Índice</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_himnarios">Himnarios</string>
+    <string name="title_activity_indice_himnarios">Índice</string>
+    <string name="title_activity_detalle_canto"></string>
+    <string name="playsimbol">►</string>
+</resources>

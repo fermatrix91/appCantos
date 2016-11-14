@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.fernando.cantosapp.DetalleCantoActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tituloCanto"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="false"
+        android:gravity="left" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:id="@+id/botonPlayAudio"
+
+        android:text="►"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="false"
+
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:longClickable="false"
+        android:textSize="15dip"
+        android:textAlignment="center"
+        android:padding="0dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingRight="0dp"
+        android:enabled="true"
+        android:textStyle="bold"
+        android:singleLine="false" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewDetalleCanto"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="12pt">
+
+        <TextView
+            android:id="@+id/contenidoCanto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:text="+"
+        android:id="@+id/botonZoomIN"
+        android:layout_alignTop="@+id/botonPlayAudio"
+        android:layout_toStartOf="@+id/botonPlayAudio"
+        android:padding="0dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:textStyle="bold"
+        android:textSize="15dip" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:text="-"
+        android:id="@+id/botonZoomOUT"
+        android:layout_alignTop="@+id/botonZoomIN"
+        android:layout_toStartOf="@+id/botonZoomIN"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:paddingTop="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:textStyle="bold"
+        android:textSize="15dip"
+        android:singleLine="false" />
+
+</RelativeLayout>
